@@ -1,0 +1,17 @@
+type Note {
+    id: ID!
+    totalTask: Int!
+    description: String!
+    minifiedDescription: String!
+    tasks: [Task]!
+}
+
+type Task {
+    id: ID!
+    description: String!
+}
+
+# The Root Query for the application
+type Query {
+    recentNotes(count: Int, offset: Int): [Note]!
+}

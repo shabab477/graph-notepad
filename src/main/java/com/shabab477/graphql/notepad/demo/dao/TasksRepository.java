@@ -1,7 +1,7 @@
 package com.shabab477.graphql.notepad.demo.dao;
 
-import com.shabab477.graphql.notepad.demo.entity.Tasks;
+import com.shabab477.graphql.notepad.demo.entity.Task;
 import org.springframework.data.repository.CrudRepository;
 
-public interface TasksRepository extends CrudRepository<Tasks, Long> {
+public interface TasksRepository extends CrudRepository<Task, Long> {
 }

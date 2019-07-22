@@ -3,12 +3,14 @@ package com.shabab477.graphql.notepad.demo.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 @Entity(name = "tasks")
-public class Tasks implements Serializable {
+public class Task implements Serializable {
     public static final long serialVersionUID = 1L;
 
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
