@@ -1,4 +1,7 @@
 package com.shabab477.graphql.notepad.demo.dao;
 
-public class NotepadRepository {
+import com.shabab477.graphql.notepad.demo.entity.Notepad;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+public interface NotepadRepository extends PagingAndSortingRepository<Notepad, Long> {
 }
